@@ -26,3 +26,24 @@
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
 }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+}
+
+input:checked + div {
+  background-color: red;
+  height: 20rem;
+  width: 120rem;
+}
+
+.test-1 {
+  a {
+    &:hover ~ .n-2 {
+      background-color: orangered;
+      height: 20rem;
+      width: 120rem;
+    }
+  }
+}
