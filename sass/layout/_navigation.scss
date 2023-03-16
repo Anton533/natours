@@ -48,7 +48,7 @@
   }
 
   &__list {
-    @include position-absolute-center;
+    @include absCenter;
     list-style: none;
     text-align: center;
     width: 100%;
@@ -111,7 +111,6 @@
       height: 2px;
       display: inline-block;
       background-color: $color-grey-dark-3;
-      transition: all 0.2s;
     }
 
     &::before,
@@ -119,6 +118,7 @@
       content: "";
       position: absolute;
       left: 0;
+      transition: all 0.2s;
     }
 
     &::before {
